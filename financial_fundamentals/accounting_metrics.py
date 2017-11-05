@@ -64,7 +64,7 @@ class BookValuePerShare(AccountingMetric):
 import pandas as pd
 import financial_fundamentals.edgar as edgar
 
-@vector_cache.vector_cache
+#@vector_cache.vector_cache
 def earnings_per_share(required_data):
     start, end = required_data.index[0], required_data.index[-1]
     for symbol, values in required_data.iteritems():
